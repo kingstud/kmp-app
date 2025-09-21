@@ -4,9 +4,9 @@ import org.gradle.api.JavaVersion
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 object Versions {
-  const val minSdk = 23
-  const val targetSdk = 34
-  const val compileSdk = 34
+  const val minSdk = 24
+  const val targetSdk = 36
+  const val compileSdk = 36
 
   private const val majorVersion = 0
   private const val minorVersion = 1
