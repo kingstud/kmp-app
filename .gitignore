@@ -9,7 +9,7 @@ output-metadata.json
 
 # IntelliJ
 *.iml
-.idea/
+.idea
 .kotlin
 misc.xml
 deploymentTargetDropDown.xml

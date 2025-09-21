@@ -26,7 +26,7 @@ internal fun PluginContainer.hasKotlinComposePlugin() =
  * @param hasRedwood Is Redwood used?
  */
 fun Project.configureAndroidCompose(
-  commonExtension: CommonExtension<*, *, *, *, *>,
+  commonExtension: CommonExtension<*, *, *, *, *, *>,
   hasRedwood: Boolean = true,
 ) {
   if (!plugins.hasKotlinComposePlugin()) {
