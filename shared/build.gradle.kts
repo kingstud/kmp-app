@@ -63,6 +63,7 @@ kotlin {
 
       // api(moko.resources.compose)
       api(moko.resources)
+      api(moko.graphics)
     }
 
     commonTest.dependencies {

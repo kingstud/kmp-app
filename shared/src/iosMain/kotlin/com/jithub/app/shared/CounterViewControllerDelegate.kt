@@ -15,15 +15,18 @@ import platform.UIKit.UIStackView
 @Suppress("unused") // Called from Swift.
 class CounterViewControllerDelegate(root: UIStackView) {
   private val scope = MainScope() + DisplayLinkClock
+  private val redwoodView = RedwoodUIView()
 
   init {
     initView(root)
   }
 
   private fun initView(root: UIStackView) {
+    root.addArrangedSubview(redwoodView.value)
+
     val composition = RedwoodComposition(
       scope = scope,
-      view = RedwoodUIView(root),
+      view = redwoodView,
       widgetSystem = SchemaWidgetSystem(
         Schema = IosWidgetFactory,
         RedwoodLayout = UIViewRedwoodLayoutWidgetFactory(),

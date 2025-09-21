@@ -1,5 +1,6 @@
 @file:Suppress("UnstableApiUsage")
 
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
@@ -19,7 +20,7 @@ group = "com.jithub.app.build-logic"
 
 // If we use jvmToolchain, we need to install JDK 11
 val compileKotlin: KotlinCompile by tasks
-compileKotlin.kotlinOptions.jvmTarget = "11"
+compileKotlin.compilerOptions.jvmTarget = JvmTarget.JVM_11
 
 java {
   sourceCompatibility = JavaVersion.VERSION_11

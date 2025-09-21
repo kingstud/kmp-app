@@ -14,8 +14,8 @@ object Versions {
   const val versionName = "$majorVersion.$minorVersion.$patchVersion"
   const val versionCode = 2402
 
-  val javaVersion = JavaVersion.VERSION_1_8
-  val jvmTarget = JvmTarget.JVM_1_8
+  val javaVersion = JavaVersion.VERSION_11
+  val jvmTarget = JvmTarget.JVM_11
 }
 
 // packaging-resources-excludes
